@@ -1,17 +1,34 @@
-# async_explained
+# asyncio_explained
 
 ## Ramble:
 
-Hey! You know how the `asyncio` python module ***makes absolutely no sense at best & made me break my laptop at worst/that actually happened?,*** but that it is also somehow extremely important & **""""BEST practice"""""** .  
+Hey! You know how the `asyncio` python module ***makes absolutely no sense at best & made me break my laptop at worst/that actually happened?,***...but also that it's somehow *extremely* important & **""""BEST practice"""""** .  
 
-#### ***Question:*** 
+
+### ***Question:*** 
 As a respectable f\*Xing professional, how can I convince myself to learn this?  
 
-#### ***Answer:*** 
-> #### *"Don't be a pussy. You got this. Now follow the instructions & stop it."*
+### ***Answer:*** 
+> #### *"Don't be a pussy. You got this. Now just follow the damn instructions & stop it."*
 >~***Herodotus, BC 436***
 
+<br>
 
+## How to Use This Package:
+
+1. **BEGIN by going to the [comparisons](./async_comparisons) folder**. Read the `README.md` then run `comparisons/grandpas_code.py` & `comparisons/grandsons_code.py` side-by-side 
+
+2. **STAND IN AWE of asynchronous process execution.** \*\**sound-of-lightning-in-the-distance*\*\* 
+
+3. Run & then read `async_basics.py` **to get the fundamentals down.**  
+
+4. Run & then read `emulating_async_classes_with_stdlib.py` **to see how some of the `asyncio` classes work.**  
+
+5. Run & then read `yield_and_yield_from.py` **to learn how the previous two modules get abbreviated by using the `asyncio` syntax provided to us by the people who made me switch to python3.**
+
+Note: *Run each module independently to see the results produced. `async_basics.py` in particular has formatted output to make the code easier to understand.*
+
+<br>
 
 ## The Paradigm-Shift:
 The 10,000ft difference between typical python programs `asyncio`-based programs **involves shifting the responsibility of determining execution-flow.**  
@@ -22,26 +39,13 @@ The 10,000ft difference between typical python programs `asyncio`-based programs
       
 #### Programs obeying the asyncio paraigm DO NOT run top-to-bottom.  
 #### The `asyncio` design-pattern means executing code ***in the order that non-blocking functions MASH on the "submit button" (aka perform a yield.)*** 
-      
+        
 
-<br><br>
+<br>
 
-
-## How to Use This Package:
-Run each module independently to see the results produced. `async_basics.py` in particular has formatted output to make the code easier to understand.
-
-1. **BEGIN by running** `comparisons/grandpas_code.py` & `comparisons/grandsons_code.py` side-by-side **AND STAND IN AWE OF THE POWER of asynchronous process execution.** \*\**sound-of-lightning-in-the-distance*\*\* 
-
-2. **Run & then read** `async_basics.py` to get the fundamentals down.**  
-
-3. **Run & then read** `emulating_async_classes_with_stdlib.py` to see how some of the `asyncio` classes work.**  
-
-4. **Run & then read** `yield_and_yield_from.py` to learn how the previous two modules get abbreviated by using the `asyncio` syntax provided to us by the people who made me switch to python3.**  
-
-<br><br>
 # RE:
->*"I hate reading code. Please use mouth-words."*  
-~***Herodotus, BC 444***
+>#### *"I hate reading code. Please use mouth-words."*  
+>~***Herodotus, BC 444***
 
 
 - **`asyncio` loops create coroutines by exploiting the following behavior of NON-BLOCKING functions:**
