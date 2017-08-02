@@ -2,7 +2,7 @@
 
 ## Ramble:
 
-Hey! You know how the `asyncio` python module ***makes absolutely no sense at best & made me break my laptop at worst/that actually happened?,***...but also that it's somehow *extremely* important & **""""BEST practice"""""** .  
+Hey! You know how the `asyncio` python module ***makes absolutely no sense at best & made me break my laptop at worst/that actually happened?,*** ...but also that it's somehow *extremely* important & **""""BEST practice"""""** .  
 
 
 ### ***Question:*** 
