@@ -9,14 +9,15 @@ Hey! You know how the `asyncio` python module ***makes absolutely no sense at be
 As a respectable f\*Xing professional, how can I convince myself to learn this?  
 
 ### ***Answer:*** 
-> #### *"Don't be a pussy. You got this. Now just follow the damn instructions & stop it."*
+> #### *"Don't be a p\*\*sy. You got this. Now just follow the damn instructions & stop it."*
 >~***Herodotus, BC 436***
 
 <br>
 
 ## How to Use This Package:
 
-1. **BEGIN by going to the [comparisons](./async_comparisons) folder**. Read the `README.md` then run `comparisons/grandpas_code.py` & `comparisons/grandsons_code.py` side-by-side 
+1. **BEGIN WITH the [comparisons](./async_comparisons) folder**. 
+   - Read the `README.md` then run `comparisons/grandpas_code.py` & `comparisons/grandsons_code.py` side-by-side 
 
 2. **STAND IN AWE of asynchronous process execution.** \*\**sound-of-lightning-in-the-distance*\*\* 
 
