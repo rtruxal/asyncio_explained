@@ -13,7 +13,7 @@
 
 
 # Diagrams Galore!
-
+***Note:*** Feel free to skip to the next section _'How to Use This Subpackage:'_ if these diagrams aren't doin' it for ya.
 ## Let's compare...
 ![comparison diagram](./readme_media/side-by-side.png)
 
@@ -29,6 +29,8 @@
 
 
 <br>
+
+# How to use this subpackage
 
 ## Step 1 --- Prepare to be mildly excited.
 
