@@ -107,3 +107,6 @@ ENV/
 
 # scratch folders
 */scratch/
+
+# pre-PDF visio files
+*.vsdx
