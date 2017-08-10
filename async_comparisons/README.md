@@ -30,7 +30,7 @@
 
 <br>
 
-# How to use this subpackage
+# How to Use This Subpackage:
 
 ## Step 1 --- Prepare to be mildly excited.
 
