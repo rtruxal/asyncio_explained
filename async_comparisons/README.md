@@ -1,6 +1,31 @@
-# Another quote:
+# Quotes! Quotes!:
+#### Don't take my word for it that `asyncio` is awesome; listen to what this dead greek philosopher has to say:  
+<br>
+
 >## *"`asyncio` is friggin' dope b/c it bypasses the GIL entirely...*<br> *...just trust me. I'm a Philosopher."*
->~***Herodotus, BC 666***
+>~***Herodotus, BC 128***
+
+
+#### As you can plainly see, the little-known `asyncio`-teachings of Herodotus had a significant influence on the community:
+
+>## *"My boy Herodotus suggested I use `asyncio` & it changed my life.*<br><br> *It's like...instead of main() calling functions, the functions call main(). Totally blew my mind man, TOTALLY blew my mind..."*
+>~***A Homeboy of Herodotus, BC 256***
+
+
+# Diagrams Galore!
+
+## Let's compare...
+![comparison diagram](./readme_media/side-by-side.png)
+
+
+## Grampa's flow:
+![blocking-flow-diagram](./readme_media/blocking-flow.png)
+
+## Grandson's flow:
+#### _(srsly try to read this before skipping it.)_
+![async-flow-diagram](./readme_media/async-flow.png)
+
+
 
 
 <br>
