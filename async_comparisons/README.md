@@ -9,7 +9,7 @@
 #### As you can plainly see, the little-known `asyncio`-teachings of Herodotus had a significant influence on the ancient Greek community:
 
 >## *"My boy Herodotus suggested I use `asyncio` & it changed my life.*<br><br> *It's like...instead of main() calling functions, the functions call main(). Totally blew my mind man, TOTALLY blew my mind..."*
->~***A Homeboy of Herodotus, BC 256***
+>~***Jeremy, Homeboy of Herodotus, BC 256***
 
 
 # Diagrams Galore!
