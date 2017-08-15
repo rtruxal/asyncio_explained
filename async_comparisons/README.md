@@ -1,19 +1,17 @@
-# Quotes! Quotes!:
-#### Don't take my word for it that `asyncio` is awesome; listen to what this dead greek philosopher has to say:  
+# Intro!:
+#### Don't take my word for it that `asyncio` is awesome; listen to what this dead greek person has to say:  
 <br>
 
->## *"`asyncio` is friggin' dope b/c it bypasses the GIL entirely...*<br> *...just trust me. I'm a Philosopher."*
->~***Herodotus, BC 128***
+>## *"`asyncio` is friggin' dope b/c it bypasses the GIL entirely...*<br> *...just trust me! I'm a Philosopher...probably."*
+>#### ~***Herodotus, BC 128***
 
 
-#### As you can plainly see, the little-known `asyncio`-teachings of Herodotus had a significant influence on the ancient Greek community:
-
->## *"My boy Herodotus suggested I use `asyncio` & it changed my life.*<br><br> *It's like...instead of main() calling functions, the functions call main(). Totally blew my mind man, TOTALLY blew my mind..."*
->~***Jeremy, Homeboy of Herodotus, BC 256***
 
 
 # Diagrams Galore!
-***Note:*** Feel free to skip to the next section _'How to Use This Subpackage:'_ if these diagrams aren't doin' it for ya.
+***Note:*** THE IMAGES BELOW HAVE WORDS IN THEM. READ THE WORDS.
+
+OH! also: Feel free to skip to the next section _'How to Use This Subpackage:'_ if these diagrams aren't doin' it for ya.
 ## Let's compare...
 ![comparison diagram](./readme_media/side-by-side.png)
 
@@ -26,6 +24,10 @@
 ![async-flow-diagram](./readme_media/async-flow.png)
 
 
+#### As you can plainly see, the little-known `asyncio`-teachings of Herodotus were highly influential in ancient Greek society:
+
+>## *"My boy Herodotus suggested I use `asyncio` & it changed my life.*<br><br> *It's like...instead of main() calling functions, the functions call main(). Totally blew my mind man, TOTALLY blew my mind..."*
+>~***Jeremy, Homeboy of Herodotus, BC 256***
 
 
 <br>
