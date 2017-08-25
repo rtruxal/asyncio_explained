@@ -1,9 +1,12 @@
 # stolen from: https://7webpages.com/blog/writing-online-multiplayer-game-with-python-and-asyncio-writing-game-loop/
-
-import asyncio
 # import async_timeout
 # import aiohttp
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import asyncio
 from aiohttp import web
+import aiofiles
 
 
 SERVER_ADDR = ('', 8808)
@@ -19,15 +22,25 @@ async def ticker_loop(app):
     :return: None
     """
     # First time this gets called is when a "client"/input-thread connects.
-    # app["service_running"] = True
+    app["service_running"] = True
+    # keepalive beacon every 2 seconds.
     while True:
+        # Rather than getting fancy w/ switching logic, I'm just changing 2 iterations into 1.
+
+        # iter 1
         for websock in app['sockets']:
             websock.send_str("tick")
-        # if len(app['sockets']) == 0:
-        #     break
-        # keepalive beacon every 2 seconds.
+        if len(app['sockets']) == 0:
+            break
         await asyncio.sleep(2)
-    # app["service_running"] = False
+        # iter 2
+        for websock in app["sockets"]:
+            websock.send_str("tock")
+        if len(app["sockets"]) == 0:
+            break
+        await asyncio.sleep(2)
+
+    app["service_running"] = False
 
 
 async def handle_websock(request):
@@ -38,6 +51,9 @@ async def handle_websock(request):
     # pass the baton back to the loop until `prepare()` is ready.
     await websock.prepare(request)
     app["sockets"].append(websock)
+    #TODO: Why did we change this location? What is ensure_future() really doing?
+    if app["service_running"] == False:
+        asyncio.ensure_future(ticker_loop(app))
     # LOGIC:
     while True:
         # If possible, try to put an await at the top of a block.
@@ -54,10 +70,10 @@ async def handle_websock(request):
 
 async def handle_webpage(request):
     # the original sourcecode opens the html without context-management
-    # and it also doesn't close the file explicitly.
-    async with open('index.html', 'rb') as index:
-        content = index.read()
-        await asyncio.sleep(0)
+    # I learned about the `aiofiles` package because of this:
+    async with aiofiles.open('index.html', 'rb') as index:
+        # note the `await`. Without it, we get back a generator.
+        content = await index.read()
     return web.Response(body=content, content_type='text/html')
 
 
@@ -72,10 +88,10 @@ if __name__ == '__main__':
 
     app = web.Application()
     app['sockets'] = []
-    # app["service_running"] = False
+    app["service_running"] = False
 
-    # This gives back a `Future` object but we don't need it.
-    asyncio.ensure_future(ticker_loop(app))
+    #TODO: Why did we move `ensure_future()` from here to `handle_websock()`?
+    # asyncio.ensure_future(ticker_loop(app))
 
     app.router.add_route('GET', '/connect', handle_websock)
     app.router.add_route('GET', '/', handle_webpage)

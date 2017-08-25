@@ -13,11 +13,10 @@ async def wshandler(request):
     ws = web.WebSocketResponse()
     await ws.prepare(request)
     app["sockets"].append(ws)
-
     while 1:
         msg = await ws.receive()
         if msg.tp == web.MsgType.text:
-            print("Got message {} from {}".format(msg.data, ws.headers.get('Host')))
+            print("Got message {}".format(msg.data))
             ws.send_str("Pressed key code: {}".format(msg.data))
         elif msg.tp == web.MsgType.close or\
              msg.tp == web.MsgType.error:
